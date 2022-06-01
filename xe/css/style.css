@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.images img{
+height:400px;
+width:500px ;
+border-radius: 10px;
+
+}
+body {
+    background-image:url("https://vtczone.vn/anh-sao-dem/imager_6_4626_700.jpg");
+}
+
+.images{
+    float: left;
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+.contest{
+    background-image:none;
+    
+    width: auto;
+    margin: 0 auto;
+}
+
+#xe_1{
+    height: 60px;
+    width: 50px;
+}
+.backgrounddom{
+    text-align: center;
+}
+#image_a{
+    padding: 5px;
+    width: 50%;
+    height: 500px;
+}
+
+
+
+
+
+
+

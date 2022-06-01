@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vehicle management</title>
+     <!-- <link rel="shortcut icon" href="/xe/imges/14.jpg" >   -->
+     <link rel="shortcut icon" href="/xe/imges/4.jpg">
+    <link rel="stylesheet" type="text/css" href="/xe/css/xe.css">
+    <style>
+        body {
+            background-image: url("https://1.bp.blogspot.com/-KKBa3UpRGog/V-0-ssj_GBI/AAAAAAAAALM/vzdWy7p9T-M9_v3HII5j7CnyoshPH77fgCLcB/w1200-h630-p-k-no-nu/galaxy-picture-10-1.jpg")
+        }
+
+        table {
+            width: 100%;
+            background-color: darkgray;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            text-align: center;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        .cancel {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <button id="icon">
+            <a href="/xe/index.html"><img id="xe_1" src="/xe/imges/14.jpg"></a>
+        </button>
+        <div id="menu_1">
+            <ul>
+                <li>
+                    <a class="menu_a" href="/xe/index.html">Home</a>
+                </li>
+                <li>
+                    <a class="menu_a"  href="/xe/xe.html">Danh Sách Xe</a>
+                </li>
+                <li>
+                    <a class="menu_a" href="#">Tin Tức</a>
+                </li>
+            </ul>
+            <div class="search-control">
+                <form class="search_1" >
+                    <a ><input id="search_a"type="search" oninput="search(this)" placeholder="Search"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="up-side">
+        <div class="add-area">
+            <div class="form-group">
+                <label for="Car_name">Car_name</label>
+                <input type="text" class="form-control" id="carname">
+            </div>
+            <div class="form-group">
+                <label for="Photo">Photo</label>
+                <input type="url" class="form-control" id="photo">
+            </div>
+            <div class="form-group">
+                <label for="Price">Price</label>
+                <input type="number" class="form-control" id="price">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" onclick="add_Car()">Add</button><br><br>
+
+                <input type="hidden" id="carId" value="0">
+            </div>
+        </div>
+    </div>
+    <div class="down-side">
+        <div class="row">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#ID</th>
+                        <th>Car_Name</th>
+                        <th>Photo</th>
+                        <th>Price
+                            <span class="sort-item" title="Acsending" onclick="sort('asc','price')">&#x25B2</span>
+                            <span class="sort-item" title="Descending" onclick="sort('desc','price')">&#x25BC</span>
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/xe/js/xe.js"></script>
+</body>
+
+</html>
